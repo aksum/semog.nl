@@ -1,0 +1,40 @@
+base_url = "https://semog.nl"
+theme = "terminus"
+title = "semog.nl"
+description = "Thoughtful notes on software, systems, and the craft behind them."
+compile_sass = false
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+minify_html = true
+author = "semog.nl"
+
+taxonomies = [
+  { name = "tags", feed = true },
+]
+
+[markdown]
+smart_punctuation = true
+bottom_footnotes = true
+github_alerts = true
+insert_anchor_links = "heading"
+
+[markdown.highlighting]
+style = "inline"
+theme = "monokai"
+
+[search]
+include_title = true
+include_description = true
+include_content = true
+
+[extra]
+color_scheme = "terminus"
+copy_button = true
+show_default_author = true
+copyright = "© $YEAR semog.nl :: Powered by [Zola](https://www.getzola.org) :: Theme by [Terminus](https://github.com/ebkalderon/terminus)"
+main_menu = [
+  { name = "blog", url = "/posts/", trailing_slash = true },
+  { name = "tags", url = "/tags/", trailing_slash = true },
+  { name = "rss", url = "/rss.xml" },
+]
