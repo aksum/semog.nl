@@ -7,7 +7,7 @@ build_search_index = true
 generate_feeds = true
 feed_filenames = ["rss.xml"]
 minify_html = true
-author = "semog.nl"
+author = "Aksum"
 
 taxonomies = [
   { name = "tags", feed = true },
@@ -32,18 +32,24 @@ include_content = true
 color_scheme = "terminus"
 copy_button = true
 show_default_author = true
-copyright = "© $YEAR semog.nl :: Powered by [Zola](https://www.getzola.org) :: Theme by [Terminus](https://github.com/ebkalderon/terminus)"
+copyright = "© $YEAR $AUTHOR :: Powered by [Zola](https://www.getzola.org) :: Theme by [ebkalderon](https://github.com/ebkalderon/terminus)"
 goatcounter_code = "semog"
+
 main_menu = [
   { name = "blog", url = "/posts/", trailing_slash = true },
   { name = "tags", url = "/tags/", trailing_slash = true },
   { name = "rss", url = "/rss.xml" },
 ]
 
+socials = [
+  { name = "github", url = "https://github.com/aksum" },
+]
+
 [extra.content_security_policy]
 enable = true
 allowed_domains = [
-  { directive = "script-src-elem", domains = ["'self'", "gc.zgo.at"] },
-  { directive = "connect-src", domains = ["'self'", "gc.zgo.at", "semog.goatcounter.com"] },
-  { directive = "img-src", domains = ["'self'", "gc.zgo.at"] },
+  { directive = "base-uri", domains = ["'self'"] },
+  { directive = "connect-src", domains = ["'self'", "semog.goatcounter.com"] },
+  { directive = "form-action", domains = ["'self'"] },
+  { directive = "script-src", domains = ["'self'", "semog.goatcounter.com"] },
 ]
