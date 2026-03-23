@@ -44,6 +44,6 @@ main_menu = [
 enable = true
 allowed_domains = [
   { directive = "script-src-elem", domains = ["'self'", "gc.zgo.at"] },
-  { directive = "connect-src", domains = ["'self'", "gc.zgo.at"] },
+  { directive = "connect-src", domains = ["'self'", "gc.zgo.at", "semog.goatcounter.com"] },
   { directive = "img-src", domains = ["'self'", "gc.zgo.at"] },
 ]
