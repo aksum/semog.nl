@@ -33,8 +33,17 @@ color_scheme = "terminus"
 copy_button = true
 show_default_author = true
 copyright = "© $YEAR semog.nl :: Powered by [Zola](https://www.getzola.org) :: Theme by [Terminus](https://github.com/ebkalderon/terminus)"
+goatcounter_code = "semog"
 main_menu = [
   { name = "blog", url = "/posts/", trailing_slash = true },
   { name = "tags", url = "/tags/", trailing_slash = true },
   { name = "rss", url = "/rss.xml" },
+]
+
+[extra.content_security_policy]
+enable = true
+allowed_domains = [
+  { directive = "script-src-elem", domains = ["'self'", "gc.zgo.at"] },
+  { directive = "connect-src", domains = ["'self'", "gc.zgo.at"] },
+  { directive = "img-src", domains = ["'self'", "gc.zgo.at"] },
 ]
