@@ -17,7 +17,7 @@ taxonomies = [
 smart_punctuation = true
 bottom_footnotes = true
 github_alerts = true
-insert_anchor_links = "heading"
+insert_anchor_links = "right"
 
 [markdown.highlighting]
 style = "inline"
