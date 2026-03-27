@@ -2,6 +2,7 @@
 title = "Home"
 
 [extra]
+framed = true
 section_path = "posts/_index.md"
 max_posts = 5
 +++
